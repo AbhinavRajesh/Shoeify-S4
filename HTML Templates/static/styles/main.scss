@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap");
+
+$heading: 40px;
+$subheading: 22px;
+$paragraph: 16px;
+$primary: #1e83e2;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  background-color: #222222;
+  color: white;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 0px 10px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #222222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  min-height: 10vh;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
+  .nav-links {
+    display: flex;
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+    .nav-link {
+      padding: 10px 20px;
+    }
+  }
+}
+
+.landing {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  font-size: $heading;
+  font-weight: 500;
+}
+p {
+  margin: 5px 0 10px 0;
+  font-size: 16px;
+}
+
+.container {
+  min-height: 80vh;
+  height: 90vh;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 100px;
+}
+.home-left-container {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    background: $primary;
+    color: white;
+    font-weight: 600;
+    font-size: $paragraph;
+    border: 2px solid #1e83e2;
+  }
+  a:hover {
+    color: #1e83e2;
+    background: transparent;
+  }
+}
+.home-right-container {
+  cursor: grab;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+
+  small {
+    margin-top: -100px;
+    font-weight: 900;
+  }
+}
+
+.latest {
+  display: flex;
+  flex-direction: column;
+  .latest-top {
+    padding: 20px 0;
+  }
+}
+
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item {
+  background-color: white;
+  margin: 10px;
+  border-radius: 4px;
+  padding: 30px;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #222222;
+  }
+  .item-desc {
+    display: flex;
+    flex-direction: column;
+    p {
+      margin: 10px 0 0 0;
+    }
+  }
+}
+
+.shoe-image {
+  height: 200px;
+  width: 160px;
+  object-fit: cover;
+  object-position: center;
+  border: 4px solid black;
+  border-radius: 4px;
+}
+
+.dark {
+  color: #222222;
+  background-color: ghostwhite;
+  .navbar {
+    color: #222222;
+    background-color: ghostwhite;
+  }
+  .nav-links {
+    a {
+      color: #222222;
+    }
+  }
+}
