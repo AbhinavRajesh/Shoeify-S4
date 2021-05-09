@@ -51,10 +51,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
 }
 
-.navbar .nav-links a {
+.navbar .nav-links a,
+.navbar .nav-links p {
   text-decoration: none;
   color: white;
   font-weight: 500;
@@ -229,17 +233,27 @@ p {
   border-radius: 4px;
 }
 
-.dark {
+.linkLoginSignup {
+  text-decoration: none;
+  color: #1e83e2;
+  margin: 10px 0;
+}
+
+.linkLoginSignup:hover {
+  text-decoration: underline;
+}
+
+.light {
   color: #222222;
   background-color: ghostwhite;
 }
 
-.dark .navbar {
+.light .navbar {
   color: #222222;
   background-color: ghostwhite;
 }
 
-.dark .nav-links a {
+.light .nav-links a {
   color: #222222;
 }
 /*# sourceMappingURL=main.css.map */

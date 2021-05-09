@@ -1,0 +1,58 @@
+.loginSignupContainer {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 400px;
+  width: 100%;
+}
+
+label {
+  margin: 5px 0;
+}
+
+input {
+  margin: 5px 0;
+  padding: 8px;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-weight: 600;
+  color: white;
+  background-color: #1e83e2;
+  border: 2px solid #1e83e2;
+  margin: 10px 0;
+}
+
+button:hover {
+  background-color: transparent;
+  color: #1e83e2;
+}
+
+a {
+  margin: 5px 0;
+}
+
+.errorMessage {
+  color: rgb(245, 86, 86);
+  border-radius: 4px;
+  font-weight: 500;
+  padding: 10px 20px;
+  margin: 5px 0;
+  font-size: 14px;
+  background-color: rgb(255, 189, 189);
+}

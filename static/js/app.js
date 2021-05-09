@@ -1,6 +1,3 @@
-const body = document.querySelector("body");
-const darkButton = document.getElementById("dark-mode");
-
 let container, camera, renderer, scene, shoe, light, controls;
 
 const init = () => {
@@ -42,7 +39,7 @@ const init = () => {
 
   // Load Model
   let loader = new THREE.GLTFLoader();
-  loader.load("../../assets/3d/scene.gltf", (gltf) => {
+  loader.load("./assets/3d/scene.gltf", (gltf) => {
     scene.add(gltf.scene);
     shoe = gltf.scene.children[0];
     shoe.rotation.x = -1.22;
@@ -61,7 +58,11 @@ const animate = () => {
   renderer.render(scene, camera);
 };
 
-init();
+if (
+  window.location.pathname === "/Shoeify-S4/" ||
+  window.location.pathname === "/Shoeify-S4/index.php"
+)
+  init();
 
 const onWindowResize = () => {
   camera.aspect = container.clientWidth / container.clientHeight;
@@ -70,9 +71,8 @@ const onWindowResize = () => {
   renderer.setSize(container.clientWidth, container.clientHeight);
 };
 
-window.addEventListener("resize", onWindowResize);
-
-const toggleDarkMode = () => {
-  body.classList.toggle("dark");
-  darkButton.innerHTML = body.classList.contains("dark") ? "Light" : "Dark";
-};
+if (
+  window.location.pathname === "/Shoeify-S4/" ||
+  window.location.pathname === "/Shoeify-S4/index.php"
+)
+  window.addEventListener("resize", onWindowResize);
