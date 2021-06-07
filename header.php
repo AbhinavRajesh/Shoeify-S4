@@ -12,7 +12,7 @@
     <header>
       <nav class="navbar">
         <div class="logo">
-          <h1>Shoeify</h1>
+          <h1><a href="index.php">Shoeify</a></h1>
         </div>
         <ul class="nav-links">
           <?php

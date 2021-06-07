@@ -43,9 +43,9 @@
           if ( $error ) echo "<span class='errorMessage''>" . $error . "</span>";
         ?>
         <label for="username">Username</label>
-        <input type="text" name="username" id="username" />
+        <input required type="text" name="username" id="username" />
         <label for="password">Password</label>
-        <input type="password" name="password" id="password" />
+        <input required type="password" name="password" id="password" />
         <button type="submit">Login</button>
         <p>Don't have an account? <a href="./signup.php" class="linkLoginSignup">Create now for free</a></p>
       </form>

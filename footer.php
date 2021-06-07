@@ -1,5 +1,6 @@
   <footer>
-    This is the footer
+    <hr />
+    Copyright &#169; | Abhinav Rajesh | 2021
   </footer>
     <script>
       const body = document.querySelector("body");
