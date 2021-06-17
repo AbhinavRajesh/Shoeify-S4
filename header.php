@@ -28,6 +28,7 @@
             } else {
           ?>
               <p>Welcome back, <?php echo $_SESSION["username"];?></p>
+              <?php if ($_SESSION["username"] == "admin" ) { ?><a href='./customers.php'><li class="nav-link">Customers</li></a><?php } ?>
               <a href="./logout.php">
                 <li class="nav-link">Logout</li>
               </a>

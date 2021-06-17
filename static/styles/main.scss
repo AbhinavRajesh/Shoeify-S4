@@ -266,6 +266,19 @@ p {
   }
 }
 
+.customers {
+  display: flex;
+  flex-direction: column;
+  div {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    td {
+      padding: 10px 20px;
+    }
+  }
+}
+
 footer {
   border-top: 0.5px solid gray;
   display: flex;
